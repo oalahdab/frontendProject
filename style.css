@@ -19,6 +19,7 @@ label.logo {
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+  cursor: pointer;
 }
 nav ul {
   float: right;
@@ -37,10 +38,12 @@ nav ul li a {
   text-transform: uppercase;
 }
 a.active,
-a:hover {
+.backgroundHover:hover {
   background: #1b9bff;
   transition: 0.5s;
+  cursor: pointer;
 }
+
 .checkbtn {
   font-size: 30px;
   color: white;
@@ -84,8 +87,8 @@ a:hover {
   nav ul li a {
     font-size: 20px;
   }
-  a:hover,
-  a.active {
+  .backgroundHover:hover,
+  .active {
     background: none;
     color: #0082e6;
   }
