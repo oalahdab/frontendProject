@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #2b6fa3;
+  --second-color: #0082e6;
+}
 * {
   padding: 0;
   margin: 0;
@@ -7,11 +11,20 @@
 }
 body {
   font-family: montserrat;
+  background: rgb(0, 130, 230);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 130, 230, 1) 41%,
+    rgba(0, 58, 128, 1) 79%
+  );
+  height: 100%;
 }
 nav {
-  background: #0082e6;
+  background: var(--second-color);
   height: 80px;
   width: 100%;
+  border-bottom: 3px solid white;
+  margin-bottom: 35px;
 }
 label.logo {
   color: white;
@@ -96,8 +109,107 @@ a.active,
     left: 0;
   }
 }
+@media screen and (min-width: 1920px) {
+  .mainImage img {
+    width: 750px !important;
+  }
+  body {
+    height: 100vh;
+  }
+}
 section {
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
+}
+.MainHeader {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+.uniLogo {
+  display: flex;
+  align-items: end;
+}
+.uniLogoDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 50px;
+  margin-top: -50px;
+}
+.container {
+  display: flex;
+}
+.info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 120px;
+}
+.info h2 {
+  font-size: 40px;
+}
+.info p {
+  font-size: 25px;
+  text-align: center;
+}
+.mainImage {
+  margin-top: -65px;
+  transform: scaleX(-1);
+  margin-top: -230px;
+  margin-left: 35px;
+}
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  animation: fadIn 3s;
+  color: white;
+  margin-bottom: 50px;
+}
+#tipimg,
+#botimg,
+#thirdFlex {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#botimg,
+#thirdFlex {
+  margin-top: 50px;
+}
+#tipimg img {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+.project p {
+  text-align: center;
+  font-size: 27px;
+  padding-top: 10px;
+}
+@keyframes fadIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact {
+  border: 4px solid;
+  width: 400px;
 }
