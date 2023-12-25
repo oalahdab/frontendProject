@@ -9,3 +9,4 @@ function showMessage() {
 const btn = document.getElementById("a");
 btn.addEventListener("click", () => showMessage());
 
+console.log("hello");
