@@ -26,6 +26,9 @@ nav {
   border-bottom: 3px solid white;
   margin-bottom: 35px;
 }
+.logo img {
+  width: 55px;
+}
 input,
 textarea {
   border: 0;
@@ -259,6 +262,7 @@ section {
   background-color: black;
   transition: all 0.5s;
 }
+
 .contactDetailsContainer {
   display: flex;
   align-items: center;
