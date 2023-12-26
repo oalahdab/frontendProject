@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="Mobil uygulama.">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usos Technologies</title>
@@ -17,8 +18,8 @@
         <li>
           <a class="active backgroundHover" href="index.html">ana sayfa</a>
         </li>
-        <li><a class="backgroundHover" href="#iletisim">iletisim</a></li>
-        <li><a class="backgroundHover" href="#ekip">ekip</a></li>
+        <li><a class="backgroundHover" href="iletisim.html">iletisim</a></li>
+        <li><a class="backgroundHover" href="ekip.html">ekip</a></li>
         <li>
           <a class="backgroundHover" href="projeler.html" id="projeLink"
             >projeler</a
@@ -27,7 +28,9 @@
         <li><a class="backgroundHover" href="#hizmetler">hizmetler</a></li>
       </ul>
     </nav>
+    <h1 class="MainHeader">İletişim</h1>
     <div class="contactContainer">
+      <div class="bluredBackground"></div>
       <div class="contact">
         <p>AD:</p>
         <input type="text" placeholder="Adınızı Giriniz" />
@@ -37,8 +40,32 @@
         <input type="email" placeholder="Emailinizi Giriniz" />
         <p>Mesajınız:</p>
         <p>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="2"
+            placeholder="Mesajınızı Giriniz"
+          ></textarea>
         </p>
+        <button class="contactButton">Gönder</button>
+        <hr />
+        <div class="contactDetailsContainer">
+        <div class="phone con">
+          <img src="phone-volume-solid.svg" alt="" srcset="" width="50px"/>
+          <div class="contactDetails"><p>+90 552 493 70 22</p></div>
+
+        </div>
+        <hr style="height: 150px;width: 2px;margin: 0;padding: 0;">
+        <div class="Email con">
+          <img src="envelope-regular.svg" alt="" srcset="" width="50px"/>
+          <div class="contactDetails">o.alahdab81@gmail.com</p></div>
+        </div>
+        <hr style="height: 150px;width: 2px;margin: 0;padding: 0;">
+        <div class="Whatsapp con"><img src="whatsapp.svg" width="50px"/><div class="contactDetails"><p>+90 553 957 75 56</p></div></div>
+        
+        </div>
+    </div>
       </div>
     </div>
   </body>
